@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 html,
-body,
-body > div {
+body {
   @apply w-full h-full p-0 m-0;
+}
+
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
 }
